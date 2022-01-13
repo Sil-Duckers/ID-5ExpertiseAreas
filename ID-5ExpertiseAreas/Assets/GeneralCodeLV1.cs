@@ -29,9 +29,7 @@ public class GeneralCodeLV1 : MonoBehaviour
     public GameObject Amanda2;
     public GameObject Alice2;
 
-    private LineRenderer lineRend; 
-    private Vector2 mousePos;
-    private Vector2 startMousePos;
+   
 
     public TextMeshProUGUI GeneralText;
 
@@ -47,8 +45,7 @@ public class GeneralCodeLV1 : MonoBehaviour
         GameObject Amanda1 = Instantiate(Amanda, P5);
         GameObject Alice1 = Instantiate(Alice, P6);
 
-        lineRend = GetComponent<LineRenderer>();
-        lineRend.positionCount = 2;
+        
 
         StartCoroutine(StartGame());
 
@@ -64,54 +61,54 @@ public class GeneralCodeLV1 : MonoBehaviour
     
     public void Choice1()
     {
-        lineRend.SetPosition(0, new Vector3(-14, 6, 10f));
+        
     }
 
     public void Choice2()
     {
-        lineRend.SetPosition(0, new Vector3(-5, 6, 10f));
+        
     }
 
     public void Choice3()
     {
-        lineRend.SetPosition(0, new Vector3(5, 6, 10f));
+        
     }
 
     public void Choice4()
     {
-        lineRend.SetPosition(0, new Vector3(14, 6, 10f));
+       
     }
 
     public void MarcoClick()
     {
-        lineRend.SetPosition(1, new Vector3(-15, -3, 9f));
+        
         StartCoroutine(MarcoClick2());
         //startMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         
     }
     public void LilyClick()
     {
-        lineRend.SetPosition(1, new Vector3(-9, -3, 9f));
+        
         StartCoroutine(LilyClick2());
     }
     public void JeffClick()
     {
-        lineRend.SetPosition(1, new Vector3(-3, -3, 9f));
+        
         StartCoroutine(JeffClick2());
     }
     public void GunterClick()
     {
-        lineRend.SetPosition(1, new Vector3(3, -3, 9f));
+        
         StartCoroutine(GunterClick2());
     }
     public void AmandaClick()
     {
-        lineRend.SetPosition(1, new Vector3(9, -3, 9f));
+        
         StartCoroutine(AmandaClick2());
     }
     public void AliceClick()
     {
-        lineRend.SetPosition(1, new Vector3(15, -3, 9f));
+       
         StartCoroutine(AliceClick2());
     }
 
